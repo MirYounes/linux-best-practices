@@ -137,3 +137,18 @@ SORT command is used to sort a file, arranging the records in a particular order
 -  nr: To sort a file with numeric data in reverse order we can use the combination of two options as stated below.
 -  u: To sort and remove duplicates pass the -u option to sort. This will write a sorted list to standard output and remove duplicates.
 -  c: This option is used to check if the file given is already sorted or not & checks if a file is already sorted pass the -c option to sort. This will write to standard output if there are lines that are out of order. The sort tool can be used to understand if this file is sorted and which lines are out of order
+
+# Uniq:
+The uniq command in Linux is a command-line utility that reports or filters out the repeated lines in a file. 
+In simple words, uniq is the tool that helps to detect the adjacent duplicate lines and also deletes the duplicate lines. uniq filters out the adjacent matching lines from the input file(that is required as an argument) and writes the filtered data to the output file.
+by default remove duplicates and return data
+
+### Syntax:
+    $ uniq [OPTION] [INPUT]
+
+### Options:
+- c: It tells how many times a line was repeated by displaying a number as a prefix with the line.
+- d: It only prints the repeated lines and not the lines which aren’t repeated.
+- u: It allows you to print only unique lines.
+- i: By default, comparisons done are case sensitive but with this option case insensitive comparisons can be made.
+- 
