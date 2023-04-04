@@ -110,3 +110,9 @@ wc stands for word count. As the name implies, it is mainly used for counting pu
     7
 ```
 
+
+# Cut
+The cut command in UNIX is a command for cutting out the sections from each line of files and writing the result to standard output. It can be used to cut parts of a line by byte position, character and field. Basically the cut command slices a line and extracts the text. It is necessary to specify option with command otherwise it gives error. If more than one file name is provided then data from each file is not precedes by its file name.
+
+### Syntax:
+    $ cut -d {delimiter} -f {field number} {file_path}
