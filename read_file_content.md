@@ -141,7 +141,9 @@ SORT command is used to sort a file, arranging the records in a particular order
 # Uniq:
 The uniq command in Linux is a command-line utility that reports or filters out the repeated lines in a file. 
 In simple words, uniq is the tool that helps to detect the adjacent duplicate lines and also deletes the duplicate lines. uniq filters out the adjacent matching lines from the input file(that is required as an argument) and writes the filtered data to the output file.
-by default remove duplicates and return data
+by default remove duplicates and return data.
+
+uniq command require sorted content
 
 ### Syntax:
     $ uniq [OPTION] [INPUT]
@@ -151,4 +153,3 @@ by default remove duplicates and return data
 - d: It only prints the repeated lines and not the lines which aren’t repeated.
 - u: It allows you to print only unique lines.
 - i: By default, comparisons done are case sensitive but with this option case insensitive comparisons can be made.
-- 
