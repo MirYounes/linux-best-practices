@@ -64,3 +64,49 @@ Similarly, you can use the ^ meta character with the grep command to display all
 For instance, the following command pipes the env command output as an input to grep and displays variables that begin with "HO":
 
     env | grep ^HO
+
+
+# Wc
+wc stands for word count. As the name implies, it is mainly used for counting purpose.
+
+- It is used to find out number of lines, word count, byte and characters count in the files specified in the file arguments
+- By default it displays four-columnar output.
+- First column shows number of lines present in a file specified, second column shows number of words present in the file, third column shows number of characters present in file and fourth column itself is the file name which are given as argument
+
+### Syntax:
+    wc [OPTION]... [FILE]...
+
+### Options:
+- l: prints the number of lines present in a file
+- w: prints the number of words present in a file
+- c: displays count of bytes present in a file
+- m: displays count of characters from a file
+
+### Examples:
+- count line of single file:
+```
+    $ wc -l state.txt
+    5 state.txt
+```
+- count line of more than one file:
+```
+    $ wc -l state.txt capital.txt
+    5 state.txt
+    5 capital.txt
+    10 total
+```
+- count all files and folders present in directory:
+```
+    $ ls gfg
+    a.txt 
+    b.txt  
+    c.txt  
+    d.txt  
+    e.txt  
+    geeksforgeeks  
+    India
+
+    $ ls gfg | wc -l
+    7
+```
+
