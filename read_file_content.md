@@ -4,6 +4,9 @@ The simplest way to view text files in Linux is the cat command. It displays the
 
     cat {file_path}
 
+# Zcat:
+zcat is a Linux utility that displays the contents of a compressed file on the command line without decompressing the file. Besides, you can use it similar to the cat command to view the contents of normal files forcefully. We’ll cover all that in this guide.
+
 # Head
 
 Sometimes the information needed is in the first lines of a file. In that case, use the head command to view the first ten lines of a file in Linux
