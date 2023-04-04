@@ -186,3 +186,11 @@ uniq command require sorted content
 - d: It only prints the repeated lines and not the lines which aren’t repeated.
 - u: It allows you to print only unique lines.
 - i: By default, comparisons done are case sensitive but with this option case insensitive comparisons can be made.
+
+
+# Awk:
+Awk is a scripting language used for manipulating data and generating reports. The awk command programming language requires no compiling and allows the user to use variables, numeric functions, string functions, and logical operators. 
+
+### Syntax:
+    awk '{print $1,$4}' employee.txt 
+
