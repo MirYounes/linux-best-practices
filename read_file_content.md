@@ -116,3 +116,24 @@ The cut command in UNIX is a command for cutting out the sections from each line
 
 ### Syntax:
     $ cut -d {delimiter} -f {field number} {file_path}
+
+
+# Sort:
+SORT command is used to sort a file, arranging the records in a particular order. By default, the sort command sorts file assuming the contents are ASCII. Using options in the sort command can also be used to sort numerically. 
+
+### Syntax:
+```
+    $ sort [Options] ... [File]
+```
+
+### Options:
+- o: Unix also provides us with special facilities like if you want to write the output to a new file, output.txt, redirects the output like this or you can also use the built-in sort option -o, which allows you to specify an output file.
+```
+    $ sort inputfile.txt > filename.txt
+    $ sort -o filename.txt inputfile.txt
+```
+-  r: ou can perform a reverse-order sort using the -r flag. the -r flag is an option of the sort command which sorts the input file in reverse order i.e. descending order by default.
+-  n: To sort a file numerically used –n option. -n option is also predefined in Unix as the above options are. This option is used to sort the file with numeric data present inside.
+-  nr: To sort a file with numeric data in reverse order we can use the combination of two options as stated below.
+-  u: To sort and remove duplicates pass the -u option to sort. This will write a sorted list to standard output and remove duplicates.
+-  c: This option is used to check if the file given is already sorted or not & checks if a file is already sorted pass the -c option to sort. This will write to standard output if there are lines that are out of order. The sort tool can be used to understand if this file is sorted and which lines are out of order
